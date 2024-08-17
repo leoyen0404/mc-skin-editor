@@ -1,24 +1,29 @@
 {
   "name": "mc-skin-editor_v0",
   "version": "0.1.0",
+  "homepage": "https://bw4s.us.kg/skin/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.11.10",
     "@testing-library/react": "^11.2.6",
     "@testing-library/user-event": "^12.8.3",
+    "gh-pages": "^6.1.1",
     "mdbreact": "^5.0.2",
     "react": "^17.0.2",
     "react-color": "^2.19.3",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
     "reactcss": "^1.2.3",
+    "three": "^0.167.1",
     "web-vitals": "^1.1.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
